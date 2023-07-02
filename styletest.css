@@ -279,3 +279,41 @@ button{
     font-size: 100px;
 }
 
+@media (min-width: 888px) and (max-width:1026px){
+    .foot{
+   
+        border: 1px solid lightgrey;
+        /* border-radius: 20px 20px 0px 0px; */
+        background-color: yellow;
+        margin: 25px;
+        padding-right: 5px;
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        align-content: center;
+        /* gap: 2px; */
+        /* width: 90vw; */
+        
+        grid-template-columns: 15% 1% auto 2% /* minmax(5px, 300px) */ 115px 10px 85px 10px 65px 10px 105px; 
+        /* grid-template-rows: 1fr; */ 
+    }   
+
+    input[type=text]{
+        /* position: relative; */
+        height: 32px ;
+        font-size: larger;
+        width: 15vw;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 22px;
+    
+    }
+
+    .class1{
+        display: inline-block;
+        position: relative;
+        padding: 15px;
+        width: 18vw;
+    }
+     
+}
