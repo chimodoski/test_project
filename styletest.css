@@ -317,3 +317,72 @@ button{
     }
      
 }
+
+@media (min-width: 625px) and (max-width:887px){
+    .top{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        /* padding: px; */
+        padding-right: 25px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 38px /* 29% */ minmax(auto, 5%) 52px 5px 52px 5px 82px 5px 52px minmax(10px, 50%) 77px;
+        gap: 14px;
+        /* justify-content: center;
+        justify-items: center */;
+    }
+
+    
+    .foot{
+        font-size: 12px;
+        border: 1px solid lightgrey;
+        /* border-radius: 20px 20px 0px 0px; */
+        background-color: orange;
+        margin: 25px;
+        padding-right: 5px;
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        align-content: center;
+        /* gap: 2px; */
+        /* width: 90vw; */
+        
+        grid-template-columns: 15% 0.3% 22% minmax(1px, 10px) 85px 1px 65px 1px 45px 1px 85px; 
+        /* grid-template-rows: 1fr; */ 
+    }
+
+    input[type=text]{
+        /* position: relative; */
+        height: 32px ;
+        font-size: larger;
+        width: 12vw;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 22px;
+    
+    }
+
+    .class1{
+        display: inline-block;
+        position: relative;
+        padding: 15px;
+        width: 14vw;
+    }
+
+    .sup{
+        position: absolute;
+        right: 120px;
+    }
+
+    .com{
+        position: absolute;
+        right: 170px;
+    }
+
+    .doc{
+        position: absolute;
+        right: 237px;
+    }
+
+}
