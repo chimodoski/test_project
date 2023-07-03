@@ -22,12 +22,7 @@ body{
     max-height: 100%;
     max-width: 100%;
    
-}
-.middle{
-    width: 90vw;
-    
-}
-    
+}   
 
 .headgrid{
     /* min-width: 80%;
@@ -41,6 +36,47 @@ body{
     align-items: center;
     font-weight: bold;
     gap: 15px;
+}
+
+.middle{
+    width: 90vw;
+    margin: auto;
+    position: relative;
+}
+
+.top{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 25px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 38px /* 29% */ minmax(auto, 29%) 52px 23px 52px 23px 82px 23px 52px minmax(10px, 100%) 77px;
+    gap: 1rem;
+    grid-template-rows: 1fr
+    /* justify-content: center;
+    justify-items: center */;
+}
+
+.top img{
+    position: absolute;
+    left: 0;
+}
+
+.topcenter{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-auto-flow: column;
+    max-width: fit-content;
+    gap: 10px;
+}
+
+.login{
+    position: absolute;
+    right: 0;
+    color: black;
 }
 
 :any-link{
@@ -96,30 +132,18 @@ body{
     font-weight: bold;
 }
 
-.top{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    padding: 25px;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 38px /* 29% */ minmax(auto, 29%) 52px 23px 52px 23px 82px 23px 52px minmax(10px, 100%) 77px;
-    gap: 1rem;
-    grid-template-rows: 1fr
-    /* justify-content: center;
-    justify-items: center */;
-}
+
 
 .toptext{
     color: black;
     width: 50%;
     display: grid;
     justify-items: center;
+    text-align: center;
 
 }
 
-.login{
-    white-space: nowrap;
-}
+
 
 .footdiv{
     height: 77px;
@@ -257,9 +281,6 @@ button{
     text-decoration: none;
 
 }
-.form{
-    
-}
 
 .black{
     color: black;
@@ -280,23 +301,13 @@ button{
 }
 
 @media (min-width: 888px) and (max-width:1026px){
-    .foot{
-   
-        border: 1px solid lightgrey;
-        /* border-radius: 20px 20px 0px 0px; */
-        background-color: yellow;
-        margin: 25px;
-        padding-right: 5px;
-        display: grid;
-        grid-auto-flow: column;
-        align-items: center;
-        align-content: center;
-        /* gap: 2px; */
-        /* width: 90vw; */
-        
-        grid-template-columns: 15% 1% auto 2% /* minmax(5px, 300px) */ 115px 10px 85px 10px 65px 10px 105px; 
-        /* grid-template-rows: 1fr; */ 
-    }   
+     
+    
+
+    .login{
+        position: absolute;
+        right: 4px;
+    }
 
     input[type=text]{
         /* position: relative; */
@@ -316,9 +327,46 @@ button{
         width: 18vw;
     }
      
+    .foot{
+   
+        border: 1px solid lightgrey;
+        /* border-radius: 20px 20px 0px 0px; */
+        background-color: yellow;
+        margin: 25px;
+        padding-right: 5px;
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        align-content: center;
+        /* gap: 2px; */
+        /* width: 90vw; */
+        
+        grid-template-columns: 15% 1% auto 2% /* minmax(5px, 300px) */ 115px 10px 85px 10px 65px 10px 105px; 
+        /* grid-template-rows: 1fr; */ 
+    }
 }
 
 @media (min-width: 625px) and (max-width:887px){
+    .headgrid{
+        position: relative;
+        font-size: smaller;
+    }
+
+    .screenfirst{
+        position: absolute;
+        left: 0;
+    }
+
+    .preview{
+        position: absolute;
+        left: 265px;
+    }
+
+    .screenlast{
+        position: absolute;
+        right: 0;
+    }
+
     .top{
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
@@ -333,6 +381,48 @@ button{
         justify-items: center */;
     }
 
+    .middle{
+        position: relative;
+        margin: 0;
+    }
+
+    .top img{
+
+        position: absolute;
+        left: 0;
+        width: 25px;
+        height: 14px;
+    }
+
+    .login{
+        position: absolute;
+        right: 4px;
+    }
+
+    .topcenter{
+        position: absolute;
+        left: 0;
+        right: 0;
+        /* right: 28px; */
+        margin: auto;
+        display: grid;
+        grid-auto-flow: column;
+        grid-column: auto;
+        max-width: fit-content;
+        gap: 8px;
+    }
+
+    /* .topcenter{
+        position: absolute;
+        left: 0;
+        right: 49px;
+        margin: auto;
+        display: grid;
+        grid-auto-flow: column;
+        grid-column: auto;
+        max-width: fit-content;
+        gap: 3%;
+    } */
     
     .foot{
         font-size: 12px;
@@ -383,6 +473,371 @@ button{
     .doc{
         position: absolute;
         right: 237px;
+    }
+
+}
+
+@media (min-width: 549px) and (max-width:624px){
+    .headgrid{
+        position: relative;
+        font-size: smaller;
+    }
+
+    .screenfirst{
+        position: absolute;
+        left: 0;
+    }
+
+    .preview{
+        position: absolute;
+        left: 250px;
+    }
+
+    .screenlast{
+        position: absolute;
+        right: 0;
+
+    }
+
+    .middle{
+        position: relative;
+        margin: auto;
+    }
+
+    .top{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        display: grid;
+        grid-auto-flow: column;
+        /* grid-template-columns: 35px 29% minmax(1px, 5px) 52px 2px 52px 2px 82px 2px 52px minmax(8px, 15%) 250px; */
+        gap: 6px;
+        /* justify-content: center;
+        justify-items: center */;
+    }
+
+    .topcenter{
+        position: absolute;
+        left: 0;
+        right: 1px;
+        /* right: 28px; */
+        /* margin: auto; */
+        display: grid;
+        grid-auto-flow: column;
+        grid-column: auto;
+        max-width: fit-content;
+        gap: 8px;
+    }
+
+  /*   .topcenter{
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: grid;
+        grid-auto-flow: column;
+        grid-column: auto;
+        max-width: fit-content;
+        gap: 2%;
+    } */
+
+    .company{
+       /*  position: absolute;
+        right: 112px; */
+        max-width: 62px;
+        
+    }   
+    .marketplace{
+        /* position: absolute;
+        right: 178px;
+        overflow: hidden;
+        word-wrap: break-word; */
+        max-width: 85px;
+    }
+    .features{
+        /* position: absolute;
+        right: 272px; */
+        max-width: 63px;
+        
+    }
+    .product{
+        /* position: absolute;
+        right: 342px; */
+        max-width: 58px;
+        
+    }
+
+    .login{
+        position: absolute;
+        right: 0;
+    }
+
+/*     .topspace{
+        position: absolute;
+        right: 67px;
+        max-width: 40px;
+    } */
+
+    
+/* 
+    .toptext{
+        text-align: center;
+    } */
+
+    .top img{
+        position: absolute;
+        left: 0;
+        width: 25px;
+        height: 14px;
+    }
+
+    .login{
+        position: absolute;
+        right: 0;
+    }
+
+    
+    
+    .foot{
+        font-size: 12px;
+        border: 1px solid lightgrey;
+        /* border-radius: 20px 20px 0px 0px; */
+        background-color: lightblue;
+        margin: 25px;
+        padding-right: 5px;
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        align-content: center;
+        /* gap: 2px; */
+        /* width: 90vw; */
+        
+        grid-template-columns: 15% 0.3% 22% 20px 30px 1px 30px 10px 30px 5px 30px; 
+        /* grid-template-rows: 1fr; */ 
+    }
+
+    input[type=text]{
+        /* position: relative; */
+        height: 32px ;
+        font-size: larger;
+        width: 12vw;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 22px;
+    
+    }
+
+    .class1{
+        display: inline-block;
+        position: relative;
+        padding: 15px;
+        width: 14vw;
+    }
+
+    .sup{
+        position: absolute;
+        right: 75px;
+        overflow: hidden;
+        max-width: 28px;
+        word-wrap: break-word;
+    }
+
+    .com{
+        position: absolute;
+        right: 110px;
+        overflow: hidden;
+        max-width: 40px;
+        word-wrap: break-word;
+    }
+
+    .doc{
+        position: absolute;
+        right: 159px;
+        overflow: hidden;
+        max-width: 28px;
+        word-wrap: break-word;
+    }
+
+    .project{
+        position: absolute;
+        right: 30px;
+        overflow: hidden;
+        max-width: 43px;
+    }
+
+}
+
+@media (min-width: 394px) and (max-width:548px){
+    .headgrid{
+        position: relative;
+        font-size: 10px;
+    }
+
+    .screenfirst{
+        position: absolute;
+        left: 0;
+        max-width: fit-content;
+    }
+
+    .preview{
+        position: absolute;
+        left: 190px;
+        max
+    }
+
+    .screenlast{
+        position: absolute;
+        right: 0;
+    }
+
+    .middle{
+        position: relative;
+        margin: auto;
+    }
+
+    .top{
+        /* position: relative; */
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 11px;
+        font-weight: bolder;
+        
+        display: grid;
+        grid-auto-flow: column;
+        /* grid-template-columns: 35px 29% minmax(1px, 5px) 52px 2px 52px 2px 82px 2px 52px minmax(8px, 15%) 250px; */
+        gap: 3px;
+        /* justify-content: center;
+        justify-items: center */;
+    }
+
+    .topcenter{
+        position: absolute;
+        left: 0;
+        right: 0;
+        /* right: 28px; */
+        margin: auto;
+        display: grid;
+        grid-auto-flow: column;
+        grid-column: auto;
+        max-width: fit-content;
+        gap: 8px;
+    }
+
+    .company{
+        /* position: absolute;
+        right: 78px; */
+        max-width: 55px;
+        
+    }   
+    .marketplace{
+ /*        position: absolute;
+        right: 133px; */
+        max-width: 68px;
+    }
+    .features{
+        /* position: absolute;
+        right: 202px; */
+        max-width: 49px;
+    }
+    .product{
+        /* position: absolute;
+        right: 252px; */
+        max-width: 45px;
+    }
+
+    /* .topspace{
+        position: absolute;
+        right: 53px;
+        max-width: 25px;
+    } */
+    
+    /* .spacer{
+        max-width: 2px;
+    } */
+    
+    
+/* 
+    .toptext{
+        text-align: center;
+    } */
+
+    .top img{
+        position: absolute;
+        left: 0;
+        width: 25px;
+        height: 14px;
+    }
+
+    .login{
+        position: absolute;
+        right: 0;
+    }
+    
+    .foot{
+        font-size: 12px;
+        border: 1px solid lightgrey;
+        /* border-radius: 20px 20px 0px 0px; */
+        background-color: lightblue;
+        margin: 25px;
+        padding-right: 5px;
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        align-content: center;
+        /* gap: 2px; */
+        /* width: 90vw; */
+        
+        grid-template-columns: 15% 0.3% 22% 20px 30px 1px 30px 10px 30px 5px 30px; 
+        /* grid-template-rows: 1fr; */ 
+    }
+
+    input[type=text]{
+        /* position: relative; */
+        height: 32px ;
+        font-size: larger;
+        width: 12vw;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 22px;
+    
+    }
+
+    .class1{
+        display: inline-block;
+        position: relative;
+        padding: 15px;
+        width: 14vw;
+    }
+
+    .sup{
+        position: absolute;
+        right: 75px;
+        overflow: hidden;
+        max-width: 28px;
+        word-wrap: break-word;
+    }
+
+    .com{
+        position: absolute;
+        right: 110px;
+        overflow: hidden;
+        max-width: 40px;
+        word-wrap: break-word;
+    }
+
+    .doc{
+        position: absolute;
+        right: 159px;
+        overflow: hidden;
+        max-width: 28px;
+        word-wrap: break-word;
+    }
+
+    .project{
+        position: absolute;
+        right: 30px;
+        overflow: hidden;
+        max-width: 43px;
     }
 
 }
